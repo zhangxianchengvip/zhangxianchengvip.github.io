@@ -1,15 +1,16 @@
 ---
-layout: page
-title: Page not found
-image:
-permalink: /404.html
+layout: default
+description: "Sorry, Page Not Found :("
 ---
-<div class="container">
-  <div class="row">
-    <div class="col col-12" style="text-align: center">
-      <h2>404</h2>
-      <p>The requested page could not be found.</p>
-      <p><a href="{{site.baseurl}}/">Back to the bLog</a></p>
+
+{% include header.html %}
+
+<header class="g-banner np-banner {{ site.postPatterns | prepend: 'post-pattern-' }}" data-theme="{{ site.theme-color }}">
+    <div class="post-wrapper">
+        <h1>404</h1>
+        <span class="subheading">{{ page.description }}</span>
+        <a href="{{ site.nav.home }}" class="btn">Back to home</a>
     </div>
-  </div>
-</div>
+</header>
+
+
