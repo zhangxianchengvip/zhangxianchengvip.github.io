@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MathJax Test
+title: Asp.net core
 date: 2017-07-30
 categories: test
 tags: mathjax 
